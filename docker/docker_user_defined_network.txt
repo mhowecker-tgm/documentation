@@ -1,0 +1,14 @@
+Container könnnen untereinander mit hostname erreichen
+
+z.B.
+Container1: dbserver
+Container2: webserver
+
+db-connection: posql://dbserver:5432
+
+
+Setup:
+
+Netzwerk erstellen mit docker network create:
+docker network create <network-name>
+

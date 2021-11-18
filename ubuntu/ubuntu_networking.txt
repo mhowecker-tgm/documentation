@@ -1,0 +1,27 @@
+Configuration:
+	/etc/netplan
+
+Strukur:
+	network:
+  		ethernets:
+    			enp0s3:
+      				dhcp4: false
+      				addresses: [192.168.55.50/24]
+      				gateway4: 192.168.55.1
+      				nameservers:
+        				addresses: [8.8.8.8]
+    			enp0s8:
+      				dhcp4: false
+      				addresses: [192.168.12.50/24]
+      				gateway4: 192.168.12.1
+      				nameservers:
+        			addresses: [8.8.8.8]
+  		version: 2
+
+Neustart:
+	netplan apply
+
+
+Nützliche Werkzeuge:
+	apt install nettools
+	apt install traceroot

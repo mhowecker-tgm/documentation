@@ -1,0 +1,21 @@
+docker network
+docker inspect <docker ps -a>
+docker network inspect <docker network ls>
+
+route -n
+sudo iptables -L -n
+
+sudo apt install net-tools
+sudo apt install traceroute
+
+sudo iptables -P FORWARD ACCEPT
+
+sudo route del -net *.*.*.* gw *.*.*.*
+
+
+2 Netzwerkadapter
+1 Host-Only
+1 Nat-Netzwerk
+
+Docker verwendet Standard-Route
+--> Nat-Netzwerk muss Standard sein

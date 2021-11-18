@@ -1,0 +1,22 @@
+Configuration:
+	/etc/ssh
+
+Daemon:
+	sshd
+	nimmt ssh Anfragen entgegen
+	um von außen auf Maschine zu verbinden
+
+Client:
+	ssh
+	schickt ssh Anfragen ab
+	um sich nach außen auf andere Maschinen zu verbinden
+
+Standards:
+	Port:
+		22
+
+Fingerprint:
+	~/.ssh/authorized_keys
+
+Service:
+	ssh.service

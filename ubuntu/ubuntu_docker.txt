@@ -1,0 +1,10 @@
+Package:
+	apt install docker
+	apt install docker.io
+
+Rechte:
+	groupadd docker
+	usermod -aG docker $USER
+
+Service:
+	docker.service
